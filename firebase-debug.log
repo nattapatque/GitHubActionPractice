@@ -1,0 +1,55 @@
+[debug] [2024-04-24T15:58:25.917Z] ----------------------------------------------------------------------
+[debug] [2024-04-24T15:58:25.921Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\Documents\CEDT\1-2\SELab\GitHubActionPractice\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2024-04-24T15:58:25.921Z] CLI Version:   7.14.0
+[debug] [2024-04-24T15:58:25.921Z] Platform:      win32
+[debug] [2024-04-24T15:58:25.921Z] Node Version:  v20.11.1
+[debug] [2024-04-24T15:58:25.921Z] Time:          Wed Apr 24 2024 22:58:25 GMT+0700 (Indochina Time)
+[debug] [2024-04-24T15:58:25.921Z] ----------------------------------------------------------------------
+[debug] [2024-04-24T15:58:25.922Z] 
+[debug] [2024-04-24T15:58:25.929Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-24T15:58:25.930Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\User\Documents\CEDT\1-2\SELab\GitHubActionPractice
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using githubactionpractice-e3700.
+[debug] [2024-04-24T15:58:27.225Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/githubactionpractice-e3700  
+ 
+[debug] [2024-04-24T15:58:28.055Z] <<< HTTP RESPONSE 403
+[debug] [2024-04-24T15:58:28.055Z] <<< HTTP RESPONSE BODY
+[debug] [2024-04-24T15:58:28.058Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-04-24T15:58:28.221Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\User\Documents\CEDT\1-2\SELab\GitHubActionPractice\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\User\Documents\CEDT\1-2\SELab\GitHubActionPractice\node_modules\firebase-tools\lib\api.js:39:35)
+    at self.callback (C:\Users\User\Documents\CEDT\1-2\SELab\GitHubActionPractice\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:518:28)
+    at Request.emit (node:domain:488:12)
+    at Request.<anonymous> (C:\Users\User\Documents\CEDT\1-2\SELab\GitHubActionPractice\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:518:28)
+    at Request.emit (node:domain:488:12)
+    at IncomingMessage.<anonymous> (C:\Users\User\Documents\CEDT\1-2\SELab\GitHubActionPractice\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:632:28)
+    at IncomingMessage.emit (node:events:530:35)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to get Firebase project githubactionpractice-e3700. Please make sure the project exists and your account has permission to access it.
